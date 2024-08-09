@@ -193,6 +193,51 @@ if(age >= 18){
 else if(age < 0){
     printf("you havent been born yet!")
 }
+else if(age ==0){
+    printf("you cant signup! you were just born")
+}
+
 else{
     printf("youre too young to sign up")
 }
+
+//#11 switch statements 
+
+-> switch is a more efficent alternative of using many "else if " statements allows a 
+   value to be tested for equility against many cases 
+
+char grade;
+
+printf("\n Enter a letter grade")
+scanf("%c", &grade)
+
+switch (grade)
+{
+case A:
+    printf("perfect\n";)
+    break;
+
+case B:
+    printf("you did good/n")
+
+case C:
+    printf("okay grade")
+
+case D:
+    printf("almost failed")
+
+case F:
+    printf("failed")
+
+default
+    printf("enter a valid grade")
+    break;
+}
+
+//#12 logical operators 
+
+=> && = and 
+=> || = or 
+=> != = not equals to 
+
+
