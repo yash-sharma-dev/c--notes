@@ -295,6 +295,124 @@ int main()
     birthday();
 }
 
+//#14 arguments 
+
+void birthday(char x[], int y){
+    printf("\nHappy birthday dear %s!", name);
+    printf("\nYou are %d years old!",age);
+}
+
+int main()
+{
+    char name[] = "Bro"
+    int age     = 21;
+
+    birthday(name, age);
+
+    return 0;
+}
+
+//#15 return statement 
+
+double square(double x)
+{
+    return x*x 
+}
+
+int main()
+{
+    double x = square(3.14)
+    printf("%lf",x);
+}
+
+//#15 ternary operators
+
+int findmax(int x, int y){
+    //ternary operators = shortcut to if/else when assigning/returning a value
+    //(condition) ? value if true : value if false
+    
+
+    if(x > y)
+    {
+        return x;
+    }
+    else
+    {
+        return y;
+    }
+
+    return (x > y) ? x : y
+}
+
+int main()
+{
+    int max = findmax(5, 4)
+    printf("%d", max)
+
+}
+
+//#16 function prototypes
+
+void hello(char[], int);    //this is a function prototype
+ 
+int main(){
+
+    // what is it?
+    //function declaration, w/o a body, before main()
+    //ensure that calls to a function are made with the correct arguments
+    
+    //IMP NOTES
+    //Many C compilers do not check for parameter matching
+    //missing arguments will result in unexpected behaviour
+    // A function prototype causes the compiler to flag an error if arguments are missing 
+    
+    char name[] = "bro";
+    int age = 21;
 
 
-abc 
+    hello(name);
+    return 0;
+}
+
+void hello(char name[], int age);
+{
+    printf("%s", name);
+    printf("%d", age);
+}
+
+//#17 string functions
+
+char str1[] = "bro";
+char str2[] = "code";
+
+/*1*/strlwr(str1); //converts the string to lowercase
+/*2*/strupr(str1); //convetrs the string to uppercase
+
+/*3*/strcat(str1, str2); //concatinate the first string to the last
+/*4*/strncat(str1, str2 , 2); //concatinate the given numbers of strings from second to first 
+
+/*5*/strcpy(str1, str2); //copy str2 to str1
+/*6*/strncpy(str1, str2, 4); // copy n characters of strings2 to string1
+
+/*7*/strset(str1, '?'); //sets all char of the strings to a given character
+/*8*/strnset(str1, 'x', 1);//set n char of the string to a given character
+
+/*9*/strrev(str1); //reverses  string
+
+/*10*/int result = strlen(str1); //result is the length of the strings
+/*11*/int result = strcmp(str1, str2); //compares two strings 
+
+/*12*/int result = strncmp(str1, str2, 1); //string compare n characters
+/*13*/int result = strcmpi(str1, str2) //string compare all (ignore lowercases)
+/*14*/int result = strnicmp(str1, str2, 1) //string compare n characters (ignore cases)
+
+//#18 for loops 
+
+//for loops = repeats a section of code a limited times
+
+for(int i = 1; i <= 10; i++)
+{
+    printf("%d\n",i)
+}
+
+asa
