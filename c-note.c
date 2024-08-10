@@ -240,4 +240,60 @@ default
 => || = or 
 => != = not equals to 
 
+// logic operators = && (AND) cheks if two conditions are true
+
+float temp = 25;
+bool sunny = false;
+
+if (temp >= 0 && temp <= 30 && sunny == true)
+{
+    printf("the weather is good \n")
+}
+else
+{
+    printf("\n the weather is not good")
+}
+
+// logic operators = || (OR) checks if at least one condition is true
+
+float temp = -1000;
+
+if (temp <= 0 || temp >= 30)
+{
+    printf("the weather is good \n")
+}
+else
+{
+    printf("\n the weather is not good")
+}
+
+// logical operators = ! (NOT) reverses the state of a condition
+
+bool sunny = true
+
+if(!sunny){
+    printf("\n It's sunny outside!")
+}
+else{
+    printf("\n It's sunny outside")
+}
+
+//#13 functions in c
+
+void birthday()
+{
+    printf("\n Happy Birthday to you!")
+    printf("\n Happy Birthday to you!")
+    printf("\n Happy Birthday to you!")
+    printf("\n Happy Birthday to you!")
+}
+
+int main()
+{
+    birthday();
+    birthday();
+    birthday();
+}
+
+
 
