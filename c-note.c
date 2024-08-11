@@ -415,3 +415,184 @@ for(int i = 1; i <= 10; i++)
     printf("%d\n",i)
 }
 
+//#19 while loops
+
+int main()
+{
+    //while loop = repeats a section of code possibly unlimited times.
+    //WHILE some conditions remains true
+    //a while loop may not exceute at all
+
+    char name[25];
+
+    printf("\n what is your name?: ");
+    fgets(name, 25, stdin);
+    name[strlen(name) - 1] = '\0';
+
+    while (strlen(name) == 0)
+    {
+        printf("\n you did not enter you name");
+
+        printf("what is your name?: ")
+        fgets(name, 25, stdin);
+        name[strlen(name) - 1] = '\0';
+    }
+    
+
+    return 0;
+}
+
+//#20 do while loops 
+
+int main()
+{
+    // while loop = check a condition, THEN excecutes a block of code if condition is true
+    // do while loops = always executes a block of code once, then checks the condition
+
+    int number = 0;
+    int sum = 0;
+
+    do{
+        printf("enter a # above 0: ")
+        scanf("%d", &number)
+        if(number > 0)
+        {
+            sum +=
+        }
+    }while (number > 0)
+    
+    printf("sum: %d", sum)
+    
+}
+
+//#21 nested loops 
+
+int rows;
+int columns;
+char symbol;
+printf("\n Enter # of rows: ")
+scanf("%d", &rows);
+
+printf("\n Enter # of rows: ")
+scanf("%d", &columns);
+
+scanf("%c",&symbol)
+
+for (int i = 1; i <= rows; i++)
+{
+    for (int j = 1; i <= columns; i++)
+    {
+        printf("%c", symbol);
+    }
+    printf("\n") 
+}
+
+//#22 continue and break statements
+
+int main()
+{
+    //continue = skip rest of code & forces the next iteration of the loop
+    //break = exits a loop/switch
+
+    for (int i = 1; i <= 20; i++) //continue
+    {
+        if (i == 13)
+        {
+            continue;
+        }
+        printf("%d\n", i); 
+    }
+    
+    return 0;
+
+    for (int i = 1; i <=20; i++) //break
+    {
+        if (i == 13)
+        {   
+            break;
+        }
+        printf("%d\n", i);
+    }
+    
+}
+
+//#23 arrays
+
+//array = a data structure that can store many values of the same data type
+
+double prices[] = {5.0, 10.0, 15.0, 20.0, 25.0}
+
+printf("$%.2lf", prices[])
+
+char name[] = "cuh" // this is a string (c language array of char)
+                    // not to confuse it with arrays
+
+
+//#24 printing arrays with loops
+
+double prices[] = {5.0, 10.0, 15.0, 20.0, 25.0}
+
+
+//printf("%d bytes\n", sizeof(prices));
+
+for(int i = 0; i < sizeof(prices)/sizeof(prices[0]); i++)
+{
+    printf("$%.2f\n", prices[i])
+}
+
+//#25 2D arrays
+
+/*
+int numbers[2][3] = {
+                        {1 , 2, 3},
+                        {4 , 5, 6}
+}
+*/
+
+int numbers[3][3];
+
+int rows = sizeof(numbers)/sizeof(numbers[0])
+int colums = sizeof(numbers[0])/sizeof(numbers[0][0])
+
+numbers[0][0] = 10;
+numbers[0][1] = 1;
+numbers[0][2] = 22;
+numbers[1][0] = 33;
+numbers[1][1] = 56;
+numbers[1][2] = 12;
+numbers[2][0] = 23;
+numbers[2][1] = 42;
+numbers[2][2] = 87;
+
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; i < columns; j++)
+    {
+        printf("%d", numbers[i][j]);
+    }
+    printf("\n");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
